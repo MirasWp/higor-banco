@@ -71,10 +71,6 @@ def inicio():
             print(Fore.RED + 'E-mail inválido ou senha inválida. Tente novamente.' + Style.RESET_ALL)
             tentativas += 1
 
-    if tentativas >= 3:
-        print(Fore.RED + 'Número máximo de tentativas atingido. Tente novamente após 5 segundos!' + Style.RESET_ALL)
-        time.sleep(5)
-        inicio()
     else:
         sair = input("Digite 's' para repetir ou qualquer outra tecla para sair: ")
         if sair.lower() == 's':
