@@ -70,13 +70,11 @@ def inicio():
         else:
             print(Fore.RED + 'E-mail inválido ou senha inválida. Tente novamente.' + Style.RESET_ALL)
             tentativas += 1
-
-    else:
-        sair = input("Digite 's' para repetir ou qualquer outra tecla para sair: ")
-        if sair.lower() == 's':
+    sair = input("Digite 's' para repetir ou qualquer outra tecla para sair: ")
+    if sair.lower() == 's':
             inicio()
-        else:
-            print('Obrigado por usar nosso sistema!')
+    else:
+        print('Obrigado por usar nosso sistema!')
 
 def consultar_dados():
     """Consulta todos os dados da tabela 'users.db'."""
